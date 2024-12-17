@@ -1137,7 +1137,7 @@ function newClient() {
 		# if not, use SUDO_USER
 		if [ "${SUDO_USER}" == "root" ]; then
 			# If running sudo as root
-			homeDir="/root"
+			homeDir="/tmp"
 		else
 			homeDir="/home/${SUDO_USER}"
 		fi
